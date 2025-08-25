@@ -13,3 +13,4 @@ jobs:
       GITHUB: ${{ secrets.GITHUB_TOKEN }}
     with:
       assignees: 'clouddrove-ci'
+      reviewers: '@terraform-gcloud-modules/approvers'
