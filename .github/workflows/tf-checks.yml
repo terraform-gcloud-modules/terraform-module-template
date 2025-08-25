@@ -6,13 +6,13 @@ on:
   workflow_dispatch:
 jobs:
 # Update 'Job name' and 'working_directory' as needed based on the module structure.
-  complete-example:
+  basic:
     uses: clouddrove/github-shared-workflows/.github/workflows/tf-checks.yml@master
     with:
-      working_directory: './examples/**'
+      working_directory: './examples/basic/'
+ 
+  complete:
+    uses: clouddrove/github-shared-workflows/.github/workflows/tf-checks.yml@master
+    with:
+      working_directory: './examples/complete/'
   
-# Seperate Job for TFlint workflow call
-  tf-lint:
-    uses: clouddrove/github-shared-workflows/.github/workflows/tf-lint.yml@master
-    secrets:
-      GITHUB: ${{ secrets.GITHUB }}
