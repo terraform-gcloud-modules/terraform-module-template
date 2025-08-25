@@ -1,8 +1,8 @@
-# ------------------------------------------------------------------------------
-# Variables
-# ------------------------------------------------------------------------------
+##-----------------------------------------------------------------------------
+## Variables
+##-----------------------------------------------------------------------------
 variable "label_order" {
-  type        = list(string)
-  default     = ["name", "environment"]
-  description = "Label order, e.g. `name`,`environment`."
+  type        = list(any)
+  default     = ["name", "environment", "location"]
+  description = "Label order, e.g. `name`,`application`,`centralus`."
 }

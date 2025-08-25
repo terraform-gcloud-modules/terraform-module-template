@@ -59,8 +59,8 @@ This table contains both Prerequisites and Providers:
 
 | Description   | Name                                       | Version   |
 |:-------------:|:-------------------------------------------:|:---------:|
-| **Prerequisite** | [Terraform](https://learn.hashicorp.com/terraform/getting-started/install.html) | >= 1.5.4 |
-| **Provider** | [aws](https://aws.amazon.com/) | >= 5.11.0 |
+| **Prerequisite** | [Terraform](https://learn.hashicorp.com/terraform/getting-started/install.html) | >= 1.6.6 |
+| **Provider** | [gcp](https://cloud.google.com/) | >= 6.49.1 |
 
 
 
@@ -84,9 +84,9 @@ Refer to complete documentation: [here](docs/io.md)
 
 This module has dependencies on:
 
-- [Labels Module](https://github.com/clouddrove/terraform-aws-labels): Provides resource tagging.
-- [Security Groups Module](https://github.com/clouddrove/terraform-aws-security-group): Manage security groups
-- [KMS Module](https://github.com/clouddrove/terraform-aws-kms): Manage resource encryption
+- [Labels Module](https://github.com/clouddrove/terraform-gcp-labels): Provides resource tagging.
+- [Security Groups Module](https://github.com/clouddrove/terraform-gcp-security-group): Manage security groups
+- [KMS Module](https://github.com/clouddrove/terraform-gcp-kms): Manage resource encryption
 
 
  -->
@@ -95,7 +95,7 @@ This module has dependencies on:
 ## Module Dependencies
 
 This module has dependencies on:
-- [Labels Module](https://github.com/clouddrove/terraform-aws-labels): Provides resource tagging.
+- [Labels Module](https://github.com/clouddrove/terraform-gcp-labels): Provides resource tagging.
 
 
 ## 📑 Changelog
