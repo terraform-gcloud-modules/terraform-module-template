@@ -6,8 +6,12 @@ on:
   workflow_dispatch:
 jobs:
 # Update 'Job name' and 'working_directory' as needed based on the module structure.
-  complete-example:
+  basic:
     uses: clouddrove/github-shared-workflows/.github/workflows/tf-checks.yml@master
     with:
-      working_directory: './examples/**'
-  
+      working_directory: './examples/basic/'
+ 
+  complete:
+    uses: clouddrove/github-shared-workflows/.github/workflows/tf-checks.yml@master
+    with:
+      working_directory: './examples/complete/'
